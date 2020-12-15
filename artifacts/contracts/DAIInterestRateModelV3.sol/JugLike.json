@@ -1,0 +1,52 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "JugLike",
+  "sourceName": "contracts/DAIInterestRateModelV3.sol",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "base",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "ilks",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "duty",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "rho",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5060f88061001f6000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c80635001f3b5146037578063d9638d36146053575b600080fd5b603d6099565b6040518082815260200191505060405180910390f35b607c60048036036020811015606757600080fd5b8101908080359060200190929190505050609f565b604051808381526020018281526020019250505060405180910390f35b60015481565b6000602052806000526040600020600091509050806000015490806001015490508256fea265627a7a7231582086abe6a90d3544d5a4ea3db69d8db2162baee3dc2d406f5662260cdd5ea526d764736f6c63430005100032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c80635001f3b5146037578063d9638d36146053575b600080fd5b603d6099565b6040518082815260200191505060405180910390f35b607c60048036036020811015606757600080fd5b8101908080359060200190929190505050609f565b604051808381526020018281526020019250505060405180910390f35b60015481565b6000602052806000526040600020600091509050806000015490806001015490508256fea265627a7a7231582086abe6a90d3544d5a4ea3db69d8db2162baee3dc2d406f5662260cdd5ea526d764736f6c63430005100032",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
