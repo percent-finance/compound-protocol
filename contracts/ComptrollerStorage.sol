@@ -127,3 +127,8 @@ contract ComptrollerV3Storage is ComptrollerV2Storage {
     /// @notice The COMP accrued but not yet transferred to each user
     mapping(address => uint) public compAccrued;
 }
+
+contract ComptrollerV4Storage is ComptrollerV2Storage {
+    /// @notice A list of all markets
+    CToken[] public allMarkets;
+}

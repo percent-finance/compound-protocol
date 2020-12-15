@@ -88,7 +88,7 @@
       ]
     },
     "/home/vfatouros/src/percent-protocol/contracts/ComptrollerG3.sol": {
-      "lastModificationDate": 1608034905410,
+      "lastModificationDate": 1608038028900,
       "contentHash": "fb2ec2be2987950e17498505158129b3",
       "sourceName": "contracts/ComptrollerG3.sol",
       "solcConfig": {
@@ -318,8 +318,8 @@
       ]
     },
     "/home/vfatouros/src/percent-protocol/contracts/ComptrollerStorage.sol": {
-      "lastModificationDate": 1608034905410,
-      "contentHash": "c325b1d599b7d0d359b274c68b3ff0f2",
+      "lastModificationDate": 1608038181080,
+      "contentHash": "218700a34a5a6131466e7219d6f4484d",
       "sourceName": "contracts/ComptrollerStorage.sol",
       "solcConfig": {
         "version": "0.5.16",
@@ -362,6 +362,7 @@
         "ComptrollerV1Storage",
         "ComptrollerV2Storage",
         "ComptrollerV3Storage",
+        "ComptrollerV4Storage",
         "UnitrollerAdminStorage"
       ]
     },
@@ -1093,8 +1094,8 @@
       ]
     },
     "/home/vfatouros/src/percent-protocol/contracts/Comptroller.sol": {
-      "lastModificationDate": 1608034905410,
-      "contentHash": "7c76058c86ea7f8595f60d36e0353090",
+      "lastModificationDate": 1608038288880,
+      "contentHash": "0d3e93f320681f7af032d5b17b1a1366",
       "sourceName": "contracts/Comptroller.sol",
       "solcConfig": {
         "version": "0.5.16",

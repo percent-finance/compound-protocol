@@ -2,7 +2,7 @@ import {HardhatRuntimeEnvironment} from 'hardhat/types';
 import {DeployFunction} from 'hardhat-deploy/types';
 import *  as _ from '@nomiclabs/hardhat-ethers';
 
-import * as c from "../recover/constants";
+import * as c from "../hardhat/constants";
 
 const deployCErc20 = async (hre : HardhatRuntimeEnvironment, 
         underlying: string, name: string, symbol: string,
@@ -39,7 +39,7 @@ const deployComptroller = async (hre : HardhatRuntimeEnvironment) => {
     const {deployments, getNamedAccounts} = hre;
     const {deploy} = deployments;  
     const {deployer} = await getNamedAccounts();   
-    await deploy('InsolventComptroller2', {
+    await deploy('Comptroller', {
         from: deployer,
         args: [], 
         log: true,
@@ -49,14 +49,6 @@ const deployComptroller = async (hre : HardhatRuntimeEnvironment) => {
 
 const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
     await deployComptroller(hre);
-    await deployCErc20(hre, c.USDC_ADDRESS, "Percent USDC", "pUSDC",
-        c.INTEREST_RATE_MODELS.Stable1);
-    await deployCErc20(hre, c.YFI_ADDRESS, "Percent YFI", "pYFI",
-        c.INTEREST_RATE_MODELS.Other1);
-    await deployCErc20(hre, c.USDT_ADDRESS, "Percent USDT", "pUSDT",
-        c.INTEREST_RATE_MODELS.Stable1);
-    await deployCErc20(hre, c.DAI_ADDRESS, "Percent DAI", "pDAI",
-        c.INTEREST_RATE_MODELS.Stable1);
 };
 
 export default func;
